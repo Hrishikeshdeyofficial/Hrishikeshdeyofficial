@@ -59,8 +59,9 @@ p{
     }
 }
 
-/* Links */
 
+
+/* Links */
 a{
     text-decoration: none;
 }
@@ -89,6 +90,48 @@ a{
 }
 
 }
+
+
+
+/* Badges */
+div{
+    margin: 200px;
+}
+.badges{
+ border-radius: 30px;
+ font-size: 2rem;
+ font-weight: 600;
+ padding: 1.5rem 2rem;
+ white-space: nowrap;
+
+}
+
+.badge--primary{
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.badge--secondary{
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.badge--small{
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width: 1024px){
+
+    .badge{
+        font-size: 1.5rem;
+    }
+    .badge--small{
+        font-size: 1.2rem;
+    }
+
+}
+
+
 
 
 
