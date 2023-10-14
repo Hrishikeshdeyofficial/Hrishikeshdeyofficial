@@ -6,6 +6,8 @@
     --body-color: #918ca4;
 }
 
+
+
 /* Typography */
 html{
 
@@ -94,9 +96,7 @@ a{
 
 
 /* Badges */
-div{
-    margin: 200px;
-}
+
 .badges{
  border-radius: 30px;
  font-size: 2rem;
@@ -133,7 +133,36 @@ div{
 
 
 
+/* Lists */
+.lists{
+    list-style-type: none;
+    padding-left: 0;
+    color: var(--headings-color);
+}
 
+.list--inline .list__item{
+    display: inline-block;
+    padding-right: 2rem;
+    font-weight: bold;
+}
+
+.list--tick{
+    list-style-image: url(../images/tick.svg);
+    padding-left: 3rem;
+}
+
+.list--tick .list__item{
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px){
+
+    .list--tick .list__item{
+     padding-left: 0.8rem;   
+    }
+
+}
 
 
 
