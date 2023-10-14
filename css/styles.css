@@ -6,7 +6,9 @@
     --body-color: #918ca4;
 }
 
-
+*,*::after,*::before{
+    box-sizing: border-box;
+}
 
 /* Typography */
 html{
@@ -188,5 +190,69 @@ a{
 
 
 
+/* Buttons */
+.btn{
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    margin: 1rem 0;
+    border: 0;
+    outline: 0;
+    border-radius: 40px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn--accent{
+    background-color: var(--accent-color);
+    color: #fff;
+}
+
+.btn--accent:hover{
+    background: #d32a00;
+}
+
+.btn--primary{
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn--primary:hover{
+    background-color: #00449c;
+}
+
+.btn--secondary{
+    background: var(--secondary-color);
+    color: #fff;
+}
+
+.btn--secondary:hover{
+    background: #0591aa;
+}
+
+.btn--block{
+    width: 100%;
+}
+
+.btn--outline{
+    background: #fff;
+    color: var(--headings-color);
+    border: 2px solid var(--headings-color);
+}
+
+.btn--outline:hover{
+    background: var(--headings-color);
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+@media screen and (min-width: 1024px){
+    .btn{
+        font-size: 0.8rem;
+    }
+}
+
+/* Inputs */
 
 
