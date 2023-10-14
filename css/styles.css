@@ -254,5 +254,23 @@ a{
 }
 
 /* Inputs */
+.inputs{
+    border-radius: 20px;
+    border: 1px solid lightgrey;
+    padding: 0.8rem 1rem;
+    outline: 0;
+    color: var(--headings-color);
+    font-size: 1.4rem;
+}
+
+::placeholder{
+    color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px){
+    .inputs{
+        font-size: 1.2rem;
+    }
+}
 
 
