@@ -176,8 +176,17 @@ a{
     width: 40px;
 }
 
+.icon--small{
+    height: 30px;
+    width: 30px;
+}
+
 .icon--primary{
     fill: var(--primary-color);
+}
+
+.icon--white{
+    fill: #fff;
 }
 
 .icon-container{
@@ -190,6 +199,9 @@ a{
     align-items: center;
 }
 
+.icon-container--accent{
+    background: var(--accent-color);
+}
 
 
 /* Buttons */
@@ -304,63 +316,6 @@ a{
 }
 
 
-/* Quotes */
-.quotes{
-    font-size: 3rem;
-    font-style: italic;
-    color: var(--body-color-darker);
-    line-height: 1.4;
-}
-
-.quote__text::before{
-    content: open-quote;
-}
-
-.quote__text::after{
-    content: close-quote;
-}
-
-.quote__author{
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: bold;
-}
-
-.quote__org{
-    font-size: 2rem;
-    font-style: normal;
-    color: var(--headings-color);
-    opacity: 0.4;
-    line-height: 0.5;
-}
-
-.media__body{
-    position: relative;
-    left: 7rem;
-    bottom: 8rem;
-}
-
-.media__image{
-    position: relative;
-    left: 1rem;
-}
-
-@media screen and (min-width: 1024px){
-
-    .quotes{
-        font-size: 2rem;
-    }
-
-    .quote__author{
-        font-size: 2.4rem;
-    }
-
-    .quote__org{
-        font-size: 1.6rem;
-    }
-}
-
-
 /* Cards */
 .card {
     border-radius: 7px;
@@ -461,5 +416,113 @@ a{
   .media__image {
     margin-top: 1rem;
   }
-  
+
+
+  /* Quotes */
+.quotes{
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--body-color-darker);
+    line-height: 1.4;
+}
+
+.quote__text::before{
+    content: open-quote;
+}
+
+.quote__text::after{
+    content: close-quote;
+}
+
+.quote__author{
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.quote__org{
+    font-size: 2rem;
+    font-style: normal;
+    color: var(--headings-color);
+    opacity: 0.4;
+    line-height: 0.5;
+}
+
+.media__body__positioning{
+    position: relative;
+    left: 7rem;
+    bottom: 13rem;
+}
+
+.media__image__positioning{
+    position: relative;
+    left: 1rem;
+}
+
+@media screen and (min-width: 1024px){
+
+    .quotes{
+        font-size: 2rem;
+    }
+
+    .quote__author{
+        font-size: 2.4rem;
+    }
+
+    .quote__org{
+        font-size: 1.6rem;
+    }
+}
+
+
+/* Grids */
+ .grid{
+    display: grid;
+}
+
+
+@media screen and (min-width: 768px){
+    .grid--1x2{
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+body{
+    padding: 3rem;
+}
+
+/* Testimonials */
+.testimonial{
+    padding: 5rem;
+}
+
+.testimonial__image > img{
+    width: 100%;
+}
+ 
+.testimonial__image{
+    position: relative;
+}
+
+.testimonial__image > .icon-container{
+    position: absolute;
+    top: 3rem;
+    right: -32px;
+}
+
+@media screen and (min-width:768px){
+    .testimonial .quotes,
+    .testimonial .quote__author{
+        font-size: 2.4rem;
+    }
+    
+    .testimonial .quotes{
+        margin-left: 7rem;
+    }
+    
+
+}
+
+
   
