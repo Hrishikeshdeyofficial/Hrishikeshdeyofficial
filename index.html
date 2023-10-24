@@ -17,86 +17,45 @@
       crossorigin="anonymous"
     ></script>
   </head>
-
   <body>
-    <section class="block block--dark block--skewed-right block-showcase">
+    <section class="block">
       <header class="block__header">
-        <h2>User-friendly Control Panel</h2>
+        <h2>About Our CEO</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, sint!
+        </p>
       </header>
-      <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
-          <source
-            type="image/webp"
-            srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
-          />
-          <source
-            type="image/png"
-            srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
-          />
-          <img src="images/ipad.png" alt="" />
-        </picture>
-        <ul class="lists">
-          <li>
-            <div class="media">
-              <div class="media__image">
+      <div class="card testimonial">
+        <div class="grid block-testimonial__grid--1x2">
+          <div class="testimonial__image">
+            <img src="images/Testimonialx1.jpg" alt="The CEO of Zolo Inc." />
+            <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
+                <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+          <blockquote class="quotes">
+            <p class="quote__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus, suscipit vero. Similique quidem neque hic nihil
+              sed beatae minima nam?
+            </p>
+            <footer>
+              <span class="media__image__positioning">
                 <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#clock"></use>
+                  <use xlink:href="images/sprite.svg#line"></use>
                 </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="block-showcase__media__title">
-                  Easy Start & Managed Updates
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veniam quisquam, ex nostrum vero voluptates dicta excepturi
-                  vel perspiciatis consequuntur ab.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#growth"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="block-showcase__media__title">
-                  Staging, GIT & WP-CLI
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veniam quisquam, ex nostrum vero voluptates dicta excepturi
-                  vel perspiciatis consequuntur ab.
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="media">
-              <div class="media__image">
-                <svg class="icon icon--primary">
-                  <use xlink:href="images/sprite.svg#wordpress"></use>
-                </svg>
-              </div>
-              <div class="media__body">
-                <h3 class="block-showcase__media__title">
-                  Dynamic Caching & More
-                </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veniam quisquam, ex nostrum vero voluptates dicta excepturi
-                  vel perspiciatis consequuntur ab.
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
+              </span>
+              <span class="media__body__positioning">
+                <h3 class="media__title quote__author">Hrishikesh Dey</h3>
+                <p class="quote__org">Zolo Inc CEO</p>
+              </span>
+            </footer>
+          </blockquote>
+        </div>
       </div>
     </section>
-
     <script src="js/main.js"></script>
   </body>
 </html>

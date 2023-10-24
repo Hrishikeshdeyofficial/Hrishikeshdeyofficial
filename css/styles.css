@@ -638,6 +638,7 @@ body{
   
   .block__header {
     text-align: center;
+    margin-bottom: 4rem;
   }
   
   .block__heading {
@@ -878,3 +879,11 @@ body{
     }
   }
   
+
+  /* Block-testimonial */
+
+  @media screen and (min-width:768px){
+    .block-testimonial__grid--1x2{
+        grid-template-columns: 1fr 1fr;
+    }
+  }
