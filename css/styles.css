@@ -737,7 +737,7 @@ body{
     }
 
     .nav__items{
-        border: 0;
+        border: 0 !important;
     }
   }
 
@@ -843,10 +843,10 @@ body{
 .feature__heading{
     margin: 1rem 0;
 }
-
+/* TODO: Refactoring the order of images and contents */
 /* @media screen and (min-width: 768px){
     .feature:nth-of-type(even) .feature__content{
-        order: 2;
+        order: -2;
     }
 } */
 
@@ -862,7 +862,14 @@ body{
 
 .block-showcase .media__body > p{
     margin-bottom: 5rem;
+}
+
+.block-showcase__heading{
     color: #fff;
+}
+
+.block-showcase__paragraph{
+    color: var(--body-color);
 }
   
   @media screen and (min-width: 768px) {
@@ -975,3 +982,9 @@ body{
         margin: 0;
     }
 } 
+
+/* Page-Header */
+/* .page-header{
+    background: #000;
+    padding-bottom: 5rem;
+} */

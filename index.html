@@ -3,9 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zolo-Space</title>
+    <meta name="description" content="Deploy your website in less than 60sec" />
+    <meta property="og:title" content="Zolo - Space for pros" />
+    <meta property="og:description" content="Deploy your websites here" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zoloinc.com" />
+
+    <title>Zolo - Space for pros</title>
     <link rel="stylesheet" href="/css/normalize.css" />
     <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +25,348 @@
     ></script>
   </head>
   <body>
-    <footer class="block block--dark footer">
+    <header class="page-header">
+      <nav class="nav collapsible" data-aos="slide-down">
+        <a class="nav__brand" href="/"><img src="images/logo.svg" alt="" /></a>
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="lists nav__list collapsible__content">
+          <li class="nav__items"><a href="#">Hosting</a></li>
+          <li class="nav__items"><a href="#">VPS</a></li>
+          <li class="nav__items"><a href="#">Domain</a></li>
+          <li class="nav__items"><a href="#">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section
+      class="block block--dark block--skewed-left hero"
+      data-aos="slide-up"
+    >
+      <div class="container grid grid--1x2">
+        <header class="block__header hero__content">
+          <h1 class="block__heading">Cloud Hosting for Pros</h1>
+          <p class="hero__tagline">
+            Deploy your websites in less than 60 seconds.
+          </p>
+          <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+        </header>
+        <img class="hero__image" src="images/banner.png" alt="" />
+      </div>
+    </section>
+
+    <section class="block container block--domain" data-aos="zoom-out">
+      <header class="block__header">
+        <h2>The Web hosting starting per month</h2>
+        <p>Choose a personal domain only at $9 starting today!!</p>
+      </header>
+      <div class="input-group">
+        <input
+          type="text"
+          class="inputs"
+          placeholder="Enter domain name here.."
+        />
+
+        <button type="submit" class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use>
+          </svg>
+          Search
+        </button>
+      </div>
+      <ul class="lists block--domain__prices">
+        <li><span class="badges badge--secondary">.com $9</span></li>
+        <li>.sg $10</li>
+        <li>.space $11</li>
+        <li>.info $14</li>
+        <li>.net $10</li>
+        <li>.xyz $10</li>
+      </ul>
+    </section>
+    <section class="block container block--plans">
+      <div class="grid grid--1x3">
+        <div class="plan">
+          <div class="card card--secondary" data-aos="slide-right">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badges badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">East start on the cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Sotrage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block btn--plan">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="plan plan--popular">
+          <div class="card card--primary">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badges badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">East start on the cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Sotrage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block btn--plan">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="plan">
+          <div class="card card--secondary" data-aos="slide-left">
+            <header class="card__header">
+              <h3 class="plan__name">Entry</h3>
+              <span class="plan__price">$14</span>
+              <span class="plan__billing-cycle">/month</span>
+              <span class="badges badge--secondary badge--small">10% OFF</span>
+              <span class="plan__description">East start on the cloud</span>
+            </header>
+            <div class="card__body">
+              <ul class="list list--tick">
+                <li class="list__item">Unlimited Websites</li>
+                <li class="list__item">Unlimited Bandwidth</li>
+                <li class="list__item">100 GB SSD Sotrage</li>
+                <li class="list__item">3 GB RAM</li>
+              </ul>
+              <button class="btn btn--outline btn--block btn--plan">
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block container">
+      <header class="block__header" data-aos="fade-up">
+        <h2>Host On the Cloud to keep growing</h2>
+        <p>To access unlimited storage and lots of other wonderful features</p>
+      </header>
+      <article class="grid grid--1x2 feature" data-aos="fade-right">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#easy"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Super Easy to use</h3>
+          <p>
+            Easy implementation at your fingertips with full security and
+            advanced integration console.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture data-aos="fade-right">
+          <source
+            type="image/webp"
+            srcset="images/easy.webp 1x, images/easy@2x.webp 2x"
+          />
+          <img class="feature__image" src="images/easy@2x.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature" data-aos="fade-left">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#computer"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Simply fast websites</h3>
+          <p>
+            Multi-Integrational development providing the fastest connections
+            for your auxillary services required.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture data-aos="fade-left">
+          <source
+            type="image/webp"
+            srcset="images/fast.webp 1x, images/fast@2x.webp"
+          />
+          <img class="feature__image" src="images/fast@2x.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature" data-aos="fade-right">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#settings"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">WordPress made easy</h3>
+          <p>
+            Best content management in the internet with modular wordpress blogs
+            services.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture data-aos="fade-right">
+          <source
+            type="image/webp"
+            srcset="images/wordpress.webp, 1x images/wordpress@2x.webp 2x"
+          />
+          <img class="feature__image" src="images/wordpress@2x.jpg" alt="" />
+        </picture>
+      </article>
+      <article class="grid grid--1x2 feature" data-aos="fade-left">
+        <div class="feature__content">
+          <span class="icon-container">
+            <svg class="icon icon--primary">
+              <use xlink:href="images/sprite.svg#clock"></use>
+            </svg>
+          </span>
+          <h3 class="feature__heading">Super Easy to use</h3>
+          <p>
+            Easy Start-up and management 24 hours with zero extra efficiency on
+            the domain.
+          </p>
+          <a href="#" class="link-arrow">Learn More</a>
+        </div>
+        <picture data-aos="fade-left">
+          <source
+            type="image/webp"
+            srcset="images/support.webp 1x, images/support@2x.webp"
+          />
+          <img class="feature__image" src="images/support@2x.jpg" alt="" />
+        </picture>
+      </article>
+    </section>
+
+    <section class="block block--dark block--skewed-right block-showcase">
+      <header class="block__header">
+        <h2 class="block-showcase__heading">User-friendly Control Panel</h2>
+      </header>
+      <div class="container grid grid--1x2">
+        <picture class="block-showcase__image" data-aos="fade-right">
+          <source
+            type="image/webp"
+            srcset="images/ipad.webp 1x, images/ipad@2x.webp 2x"
+          />
+          <source
+            type="image/png"
+            srcset="images/ipad.png 1x, images/ipad@2x.png 2x"
+          />
+          <img src="images/ipad.png" alt="" />
+        </picture>
+        <ul class="lists" data-aos="fade-up">
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3
+                  class="block-showcase__media__title block-showcase__heading"
+                >
+                  Easy Start & Managed Updates
+                </h3>
+                <p class="block-showcase__paragraph">
+                  Now enable managed platform updates to apply patch version
+                  updates only, or for both minor and patch version updates and
+                  patch version updates provide bug fixes and performance.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#growth"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3
+                  class="block-showcase__media__title block-showcase__heading"
+                >
+                  Staging, GIT & WP-CLI
+                </h3>
+                <p class="block-showcase__paragraph">
+                  Easy staging and maintenance with wordpress localhost
+                  providing 24/7 live productivity.x
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="media">
+              <div class="media__image">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#wordpress"></use>
+                </svg>
+              </div>
+              <div class="media__body">
+                <h3
+                  class="block-showcase__media__title block-showcase__heading"
+                >
+                  Dynamic Caching & More
+                </h3>
+                <p class="block-showcase__paragraph">
+                  Dynamic cache stores entire pages of a website in the server
+                  RAM. The entire content from the database will be loaded on
+                  the first visit to that webpage and will then be stored in the
+                  web server's memory.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="block">
+      <header class="block__header" data-aos="zoom-in">
+        <h2>About Our CEO</h2>
+        <p>Idea is just a thought, until you make it happen!!</p>
+      </header>
+      <div class="card testimonial" data-aos="flip-up">
+        <div class="grid block-testimonial__grid--1x2">
+          <div class="testimonial__image">
+            <img src="images/Testimonialx1.jpg" alt="The CEO of Zolo Inc." />
+            <span class="icon-container icon-container--accent">
+              <svg class="icon icon--white icon--small">
+                <use xlink:href="images/sprite.svg#quotes"></use>
+              </svg>
+            </span>
+          </div>
+          <blockquote class="quotes" data-aos="flip-up">
+            <p class="quote__text">
+              Everything starts at base zero, its you who can either choose to
+              be complacent or strive for the change.
+            </p>
+            <footer>
+              <span class="media__image__positioning">
+                <svg class="icon icon--primary">
+                  <use xlink:href="images/sprite.svg#line"></use>
+                </svg>
+              </span>
+              <span class="media__body__positioning">
+                <h3 class="media__title quote__author">Hrishikesh Dey</h3>
+                <p class="quote__org">Zolo Inc CEO</p>
+              </span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+    <footer class="block block--dark footer" data-aos="slide-up">
       <div class="container grid footer__sections">
         <section class="collapsible collapsible--expanded footer__section">
           <header class="collapsible__header">
@@ -27,7 +375,7 @@
               <i class="fa-solid fa-circle-chevron-down"></i>
             </span>
           </header>
-          <div class="collapsible__content">
+          <div class="collapsible__content" data-aos="slide-up">
             <ul class="lists">
               <li><a href="#">WordPress Hosting</a></li>
               <li><a href="#">Automated WordPress</a></li>
@@ -44,7 +392,7 @@
               <i class="fa-solid fa-circle-chevron-down"></i>
             </span>
           </header>
-          <div class="collapsible__content">
+          <div class="collapsible__content" data-aos="slide-up">
             <ul class="lists">
               <li><a href="#">About</a></li>
               <li><a href="#">Affiliates</a></li>
@@ -63,7 +411,7 @@
               <i class="fa-solid fa-circle-chevron-down"></i>
             </span>
           </header>
-          <div class="collapsible__content">
+          <div class="collapsible__content" data-aos="slide-up">
             <ul class="lists">
               <li><a href="#">Contact</a></li>
               <li><a href="#">Knowledge Base</a></li>
@@ -81,22 +429,32 @@
               <i class="fa-solid fa-circle-chevron-down"></i>
             </span>
           </header>
-          <div class="collapsible__content">
+          <div class="collapsible__content" data-aos="slide-up">
             <ul class="lists">
-              <li><a href="#">WordPress Hosting</a></li>
-              <li><a href="#">Free Automated WordPress</a></li>
-              <li><a href="#">Migration</a></li>
-              <li><a href="#">Domain Names</a></li>
-              <li><a href="#">Monthly Web Hosting</a></li>
+              <li><a href="#">Mobile - 9003313614</a></li>
+
+              <li>
+                <a href="#">Linkedin - hrishikesh-dey</a>
+              </li>
+              <li><a href="#">unreality_ig</a></li>
+              <li><a href="#">unreality_twt</a></li>
+              <li><a href="#">Email me at - luvrishi64@gmail.com</a></li>
             </ul>
           </div>
         </section>
         <section class="footer__brand">
           <img src="/images/logo.svg" alt="logo" />
-          <p class="footer__copyright">Copyright 2020 Moshify - Zolo Inc</p>
+          <p class="footer__copyright">
+            Copyright 2020 Zolo Inc - Sponsored by Moshify
+          </p>
         </section>
       </div>
     </footer>
+
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
