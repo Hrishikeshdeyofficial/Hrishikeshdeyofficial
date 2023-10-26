@@ -564,6 +564,8 @@ body{
 .callout{
     border-radius: 10px;
     padding: 4rem;
+
+    
 }
 
 .callout--primary{
@@ -583,6 +585,15 @@ body{
     font-size: 1.6rem;
 }
 
+.callout--position{
+    position: absolute;
+    max-width: 1000px;
+    max-height: 250px;
+    top: 610rem;
+    left: 30rem;
+   z-index: 999;
+}
+
 @media screen and (min-width: 768px){
     .grid--1x2{
         grid-template-columns: 1fr auto;
@@ -594,6 +605,12 @@ body{
     .callout .btn{
         justify-self: start;
         margin: 0 6rem;
+    }
+}
+
+@media screen and (max-width:768px){
+    .callout{
+        display: none;
     }
 }
 
